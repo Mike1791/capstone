@@ -1,28 +1,26 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.2.6'
-
 gem 'rails-api'
-
+gem 'jbuilder', '~>2.0'
 gem 'spring', :group => :development
+gem 'pg', '~>0.15'
 
+group :development, :test do
+  # gem 'webrick', '~>1.3.1', :platforms=>[:mingw, :mswin, :x64_mingw, :jruby]
+  # gem 'tzinfo-data', :platforms=>[:mingw, :mswin, :x64_mingw, :jruby]
+  # gem 'sqlite3', '~>1.3.12'
+  # gem 'byebug', '~>9.0.6'
+  # gem 'pry-byebug', '~>3.4.0'
+  # gem 'httparty', '~>0.14.0'
 
-gem 'pg'
+  gem 'rspec-rails', '~> 3.5.2'
+  # gem 'mongoid-rspec', '~> 3.0.0'
+  # gem 'capybara', '~> 2.10.1'
+  # gem 'poltergeist', '~> 1.11.0'
+  # gem 'selenium-webdriver', '~> 2.53.4'
+  # gem 'chromedriver-helper', '~>1.0.0'
+  # gem 'launchy', '~>2.4.3'
+  # gem 'simplecov', '~>0.12', :require=>false
+end
 
-
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano', :group => :development
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
