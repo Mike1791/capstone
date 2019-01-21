@@ -7,9 +7,10 @@ gem 'spring', :group => :development
 gem 'pg', '~>0.15'
 gem 'mongoid', '~>5.1.5'
 gem 'mongo', '~>2.4.0'
+gem 'rack-cors', '~>0.4.0', :require => 'rack/cors'
 
 group :development, :test do
-  # gem 'webrick', '~>1.3.1', :platforms=>[:mingw, :mswin, :x64_mingw, :jruby]
+  gem 'webrick', '~>1.3.1', :platforms=>[:mingw, :mswin, :x64_mingw, :jruby]
   # gem 'tzinfo-data', :platforms=>[:mingw, :mswin, :x64_mingw, :jruby]
   # gem 'sqlite3', '~>1.3.12'
   # gem 'byebug', '~>9.0.6'
@@ -26,3 +27,6 @@ group :development, :test do
   # gem 'simplecov', '~>0.12', :require=>false
 end
 
+group :production do
+  gem 'puma', '~>3.6.0', :platforms=>:ruby
+end
