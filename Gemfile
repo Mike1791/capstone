@@ -5,6 +5,8 @@ gem 'rails-api'
 gem 'jbuilder', '~>2.0'
 gem 'spring', :group => :development
 gem 'pg', '~>0.15'
+gem 'mongoid', '~>5.1.5'
+gem 'mongo', '~>2.4.0'
 
 group :development, :test do
   # gem 'webrick', '~>1.3.1', :platforms=>[:mingw, :mswin, :x64_mingw, :jruby]
