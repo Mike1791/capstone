@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-ruby '2.3.1'
-gem 'rails', '4.2.6'
+ruby '2.4.5'
+gem 'rails', '4.2.8'
 gem 'rails-api'
 # gem 'pry-rails', '~>0.3.4'
 gem 'jbuilder', '~>2.0'
@@ -31,5 +31,5 @@ end
 
 group :production do
   gem 'rails_12factor', '~>0.0.3'
-  gem 'puma', '~>3.6.0', :platforms=>:ruby
+  gem 'puma', '~>3.7.0', :platforms=>:ruby
 end
