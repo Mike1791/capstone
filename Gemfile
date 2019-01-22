@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.4.5'
+ruby '2.3.3'
 gem 'rails', '4.2.6'
 gem 'rails-api'
 # gem 'pry-rails', '~>0.3.4'
